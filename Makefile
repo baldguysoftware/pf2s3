@@ -6,6 +6,7 @@ release: pf2s3
 
 
 pf2s3: 
+	go get -t ./...
 	go build 
 
 test:
