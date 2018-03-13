@@ -3,7 +3,7 @@ os: linux
 language: go
 
 go: 
-    - 1.9
+    - "1.10"
 
 before_install:
     - go get github.com/tcnksm/ghr
