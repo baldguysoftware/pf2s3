@@ -81,7 +81,7 @@ func sendToS3(c *cli.Context) error {
 	tags := fmt.Sprintf("sender=%s&recipient=%s", fromhdr.Address, tohdr.Address)
 
 	os.Setenv("HOME", user.HomeDir)
-	s, err := session.NewSession(&aws.Config{Region: aws.String(region), Credentials: credentials.NewSharedCredentials("", "default")})
+	s, err := session.NewSession(&aws.Config{Region: aws.String(region), Credentials: credentials.NewSharedCredentials("", c.String("profile"))})
 	if err != nil {
 		log.Fatal(err)
 	}
