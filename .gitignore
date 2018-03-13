@@ -3,6 +3,7 @@
 *.dll
 *.so
 *.dylib
+pf2s3
 
 # Test binary, build with `go test -c`
 *.test
