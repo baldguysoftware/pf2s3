@@ -3,10 +3,11 @@ os: linux
 language: go
 
 go: 
-    - latest
+    - 1.9
 
 before_install:
     - go get github.com/tcnksm/ghr
 
 after_install:
+    - go build
     - ghr  --username therealbill --token $GITHUB_TOKEN --replace $(cat .version) pf2s3
