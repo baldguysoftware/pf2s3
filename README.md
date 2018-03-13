@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.org/baldguysoftware/pf2s3.svg?branch=master)](https://www.travis-ci.org/baldguysoftware/pf2s3)
+
 # Postfix To S3
 
 Ok, so I've been using this on my Raspberry Pi network for a while now, figure
