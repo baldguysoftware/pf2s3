@@ -6,7 +6,7 @@ Ok, so I've been using this on my Raspberry Pi network for a while now, figure
 I'd put it here for public consumption. This is intended to be run as a Postfix
 delivery command. For example, if you have a address "upload@foo.com", then if
 you configure that alias to be `upload@foo.com |"path/to/pf2s3 -b BUCKET-NAME
--p PATH-IN-BUCKET " and have the needed aws credentials set via the
+-p PATH-IN-BUCKET "` and have the needed aws credentials set via the
 `$HOME/.aws/credentials` file for the user it will run as, then Postfix will
 send the message over standard in and the executable will upload it.
 
